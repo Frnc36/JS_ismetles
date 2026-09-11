@@ -11,6 +11,7 @@ export default class HajoController {
   constructor() {
     this.#hajoModell = new HajoModell();
     this.ARTICLEELEM = document.querySelectorAll(".tarolo")[0];
+    this.KOSARELEM = document.querySelectorAll(".kosar")[0];
     this.rendezGomb = document.querySelector("#rendeznev");
     this.szureskGomb = document.getElementById("szuresfilm");
 
@@ -34,11 +35,15 @@ export default class HajoController {
     });
     window.addEventListener("kivalaszt", (event) => {
       console.log(event.detail);
-
       const ADAT = this.#hajoModell.getAdat(event.detail);
       console.log(ADAT);
       this.ARTICLEELEM.innerHTML = "";
       new HajoTeljes(ADAT, this.ARTICLEELEM);
+    });
+
+    window.addEventListener("kosarba", (event) => {
+      const KOSAR = this.#hajoModell.getAdat(event.detail);
+      new Hajok(KOSAR, this.KOSARELEM);
     });
   }
 } //class

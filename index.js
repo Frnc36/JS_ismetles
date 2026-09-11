@@ -18,5 +18,5 @@ OK 2. Hajó osztályba kell egy esemény kezelő a gombra kattintást kezeli és
 2. A hajoController feliratjozik a kosarba eseményre
 3. modellben kell egy kosarLista, ebbe kerül bele a kiválasztott adat, majd modellben kell egy kosárba tagfüggvény
 4. modelbe kell egy getKosar tagfüggvény
-5. A controller lekéri a mdeltől aaksár tartalmát és példányosítja a kosat divbe a kosár tartalmát(Használd a Hajok osztályt)
+5. A controller lekéri a modeltől aaksár tartalmát és példányosítja a kosat divbe a kosár tartalmát(Használd a Hajok osztályt)
 */

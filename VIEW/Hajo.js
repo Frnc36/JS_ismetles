@@ -24,10 +24,10 @@ export default class Hajo {
   }
   esemenykezelo() {
     this.buttonElem.addEventListener("click", () => {
-      const E = new CustomEvent("kivalaszt", { detail: this.#obj.id});
+      const E = new CustomEvent("kivalaszt", { detail: this.#obj.id });
       window.dispatchEvent(E);
       console.log(this.#obj.id);
-      
     });
+
   }
 }

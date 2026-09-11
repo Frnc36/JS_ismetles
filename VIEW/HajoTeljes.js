@@ -5,6 +5,7 @@ export default class HajoTeljes {
   constructor(obj, szuloElem) {
     this.#obj = obj;
     this.#szuloElem = szuloElem;
+    this.kosarElem = document.querySelector(".hajo:last-child button");
     this.megjelenit();
   }
 
@@ -16,8 +17,16 @@ export default class HajoTeljes {
                 <p>Hajó szine: ${this.#obj.szin}</p>
                 <p>Hajó valodi: ${this.#obj.valodi}</p>
                 <p>Hajó leiras: ${this.#obj.leiras}</p>
+                <button>Kosarba</button>
             </div>
         `;
     this.#szuloElem.insertAdjacentHTML("beforeend", SZOVEG);
+  }
+  esemeny() {
+    this.kosarElem.addEventListener("click", () => {
+      const K = new CustomEvent("kosarba", { detail: this.#obj.id });
+      window.dispatchEvent(K);
+      console.log(this.#obj.id);
+    });
   }
 }

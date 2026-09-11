@@ -37,4 +37,14 @@ export default class HajoModell {
       return a.id == id;
     });
   }
+
+  kosarba() {
+    
+  }
+
+  getKosar() {
+    return this.#lista.find((a) => {
+      return a.id == id;
+    });
+  }
 }
