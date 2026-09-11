@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: lightseagreen;
+  color: white;
+  border-radius: 10px;
+  font-size: 15pt;
+}
+
+nav {
+  padding: 20px;
+  margin: 20px;
+}
+
+nav ul {
+  list-style: none;
+  /* alapból van az ul-en padding */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+
+}
+
+nav ul li {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: lightseagreen;
+  border-radius: 200px;
+}
+nav ul li:hover {
+  border-radius: 5px;
+}
+
+nav ul li:hover a {
+  color: white;
+}
+
+.tarolo {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article div {
+  padding: 10px;
+  margin: auto;
+}
+
+div {
+  border-top: 5px solid lightseagreen;
+  border-bottom: 5px solid lightseagreen;
+  border-radius: 5px;
+}
+
+div h2 {
+  color: lightseagreen;
+}
