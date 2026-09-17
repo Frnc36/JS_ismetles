@@ -43,7 +43,7 @@ export default class HajoController {
 
     window.addEventListener("kosarba", (event) => {
       const KOSAR = this.#hajoModell.getAdat(event.detail);
-      new Hajok(KOSAR, this.KOSARELEM);
+      new Hajok([KOSAR], this.KOSARELEM);
     });
   }
 } //class
